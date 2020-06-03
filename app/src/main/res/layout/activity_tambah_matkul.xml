@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blue_sky"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTambahMatkul">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="back"
+                android:scaleType="fitXY"
+                android:src="@drawable/back"/>
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratbold"
+                android:text="TAMBAH MATKUL"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Spinner
+                    android:id="@+id/spinnerHari"
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/custom_spinner"
+                    android:entries="@array/hari"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="521dp" />
+                <EditText
+                    android:id="@+id/edtMatkul"
+                    android:layout_width="298dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_white"
+                    android:ems="10"
+                    android:layout_below="@id/spinnerHari"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Nama Matakuliah"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edtJam1"
+                    android:layout_width="298dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/edtMatkul"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_white"
+                    android:ems="10"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Jam Mulai"
+                    android:inputType="time"
+                    android:onClick="pilihjam" />
+                <EditText
+                    android:id="@+id/edtJam2"
+                    android:layout_width="298dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/edtJam1"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_white"
+                    android:ems="10"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Jam Selesai"
+                    android:inputType="time"
+                    android:onClick="pilihjam2" />
+
+
+                <EditText
+                    android:id="@+id/edtDosen"
+                    android:layout_width="298dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/edtJam2"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_white"
+                    android:ems="10"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Dosen Pengajar"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/edtRuang"
+                    android:layout_width="298dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/edtDosen"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_white"
+                    android:ems="10"
+                    android:fontFamily="@font/montserratregular"
+                    android:hint="Ruang"
+                    android:inputType="text" />
+                <Button
+                    android:id="@+id/buttonTambah"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_below="@id/edtRuang"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_blue"
+                    android:fontFamily="@font/montserratbold"
+                    android:onClick="tambahMatkul"
+                    android:text="SAVE"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

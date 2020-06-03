@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="green">#19BC40</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#F96060</color>
+    <color name="blue">#6074F9</color>
+    <color name="purple">#8560F9</color>
+    <color name="blue_bg">#3484AC</color>
+    <color name="blue_sky">#01bcf1</color>
+    <color name="blue_bright_sky">#4DD0F5</color>
+    <color name="disable">#c9cbce</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#FFFFF0</color>
+    <color name="dot_dark_screen2">#FFFFF0</color>
+    <color name="dot_dark_screen3">#FFFFF0</color>
+    <color name="dot_dark_screen4">#FFFFF0</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#A9A9A9</color>
+    <color name="dot_light_screen2">#A9A9A9</color>
+    <color name="dot_light_screen3">#A9A9A9</color>
+    <color name="dot_light_screen4">#A9A9A9</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+</resources>

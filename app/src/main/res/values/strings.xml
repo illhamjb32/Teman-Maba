@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Teman MABA</string>
+    <string-array name="scurity_question">
+        <item>Siapa nama ibu kandung Anda?</item>
+        <item>Apa makanan kesukaan Anda?</item>
+        <item>Siapa nama tokoh kartun favorit Anda?</item>
+        <item>Dimana tempat tinggal anda?</item>
+    </string-array>
+    <string-array name="hari">
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
