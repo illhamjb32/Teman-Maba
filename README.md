@@ -5,5 +5,5 @@ V1. Teman MABA adalah aplikasi yang ditujukan kepada Mahasiswa/Mahasiswa Baru (M
 
 Nama Kelompok:
 Ilham Jody Bimantara / 
-JTD3A/07 / 
+JTD3A-07 / 
 1741160044
